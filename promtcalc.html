@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Calculate()">Calculate</button>
+    <script>
+    function Calculate(Operation){
+        var num1=parseFloat(prompt("Enter first number"));
+        var num2=parseFloat(prompt("Enter second number"));
+        var Operation=prompt("Enter Operation(ADD,SUB,MUL,DIV)");
+        
+        
+        switch(Operation)
+        {
+            case"ADD":
+            alert(num1+num2);
+            break;
+
+            case"SUB":
+            alert(num1-num2);
+            break;
+
+            case"MUL":
+            alert(num1*num2);
+            break;
+
+            case"DIV":
+            if(num===0)
+        { 
+            alert("Error: Division by zero!");
+        }
+        else{
+            alert(num1/num2);
+        }
+        break;
+        default:
+            alert("Error");
+        }}
+</script>
+</body>
+</html>
