@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollover Images</title>
+    <style>
+        img{
+            width: 300px;
+            float: left;
+            margin-left: 520px;
+            margin-top: 200px; }
+    </style>
+    </head>
+<body>
+    <img id="chicks" src="./Image/chicks.jpg" alt="chicks">
+    
+    <script>
+        let img=document.getElementById("chicks");
+        
+        img.addEventListener("mouseover",function() {
+         img.src="./image/Laptop.jpg";
+        });
+        
+        img.addEventListener("mouseout",function() {
+            img.src="./Image/chicks.jpg";
+        });
+
+        img.addEventListener("mousedown",function(){
+            img.src="./Image/Mobile.jpeg";
+        });
+
+        img.addEventListener("mouseup",function(){
+            img.src="./Image/Seashore.jpg";
+        });
+    </script>
+</body>
+</html>
