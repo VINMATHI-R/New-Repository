@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students=[
+            {name:"Vinmathi", year:"2019",ranking:"4"},
+            {name:"Ashwini",  year:"2019",ranking:"5"},
+            {name:"Brindha", year:"2018",ranking:"4"},
+            {name:"Nivetha",year:"2019",ranking:"1" },
+            {name:"Ramya", year:"2017",ranking:"12"},
+            {name:"Jeni", year:"2019",ranking:"10"}, 
+            {name:"Fathima", year:"2019",ranking:"7"},
+            {name:"Sathya", year:"2018",ranking:"8"}
+        ]
+        for(i=0;i<students.length;i++)
+        {
+            if(students[i].ranking>=5 && students[i].year==2019)
+            {
+                document.write(students[i].name+ "<br>");
+            }
+        }
+    </script>
+</body>
+</html>
